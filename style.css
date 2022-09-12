@@ -1,0 +1,8 @@
+.container {
+  background-color: orange;
+}
+.input {
+  height: 2.5rem !important;
+  border-radius: 5px;
+  border: 2px solid white;
+}
