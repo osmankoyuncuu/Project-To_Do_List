@@ -7,10 +7,10 @@ const newUl = document.createElement("ul");
 listDom.appendChild(newUl);
 
 //? addbtn event handler
-
+/* <i class="fa-sharp fa-solid fa-circle-check"></i>; */
 buttonDom.addEventListener("click", () => {
   newUl.innerHTML += `
-  <li>${inputDom.value} <button>X</button></li>`;
+  <li> <i class="fa-regular fa-circle"></i> ${inputDom.value}<i class="fa-solid fa-trash"></i> </li>`;
 });
 
 //? keydown event handler
