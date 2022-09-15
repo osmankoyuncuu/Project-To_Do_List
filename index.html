@@ -4,33 +4,59 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nabla&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="header container text-center mt-3 p-4">
-      <h1 class="text-white p-2">To Do List</h1>
-      <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-10">
-          <input type="text" name="to_do_list" id="input" class="input w-100" />
-        </div>
-        <div class="col-2 d-flex justify-content-end">
-          <button class="btn btn-success w-100" id="btn">Add</button>
-        </div>
-      </div>
-    </div>
-    <div class="container">
+    <!-- Header -->
+    <div class="container header pt-4 d-flex flex-column">
       <div class="row">
-        <div class="col" id="list" class="list"</div>
+        <div class="col-md-6 d-none d-md-block">
+          <h1 class="text-white display-3">To do list..</h1>
+        </div>
+        <div class="col-md-6">
+          <h2 class="text-dark display-3 d-flex justify-content-end">
+            Tarih-Saat
+          </h2>
+        </div>
+      </div>
+      <!-- Add -->
+      <div class="row mt-3">
+        <div class="input-group">
+          <input type="text" class="form-control fs-4" id="input" />
+          <button class="button input-group-text" id="button">+</button>
+        </div>
+      </div>
+      <div
+        class="row d-flex justify-content-center align-content-start select-box"
+      >
+        <select name="to-do" class="select" id="filter">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="uncompleted">Uncompleted</option>
+        </select>
       </div>
     </div>
-
+    <!-- List -->
+    <div class="container" id="list"></div>
     <script src="app.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"

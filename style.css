@@ -1,43 +1,62 @@
+body {
+  background-image: url(./img/photo-1.jfif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Dancing Script", cursive;
+}
 .header {
-  background-color: orange;
+  height: 250px;
 }
-.container {
-  width: 75%;
+.button {
+  width: 5rem !important;
+  font-weight: 900;
+  padding-left: 1.7rem;
+  font-size: 2rem;
+  background-color: rgb(64, 64, 64);
+  color: white;
+  transition: all 0.2s;
 }
-.input {
-  height: 2.5rem !important;
+.button:hover {
+  background-color: black;
+}
+.select-box {
+  margin-top: 0.5rem;
+}
+.select {
+  /* margin-top: -2rem; */
+  width: 10rem;
   border-radius: 5px;
-  border: 2px solid white;
+  height: 2rem;
+}
+p {
+  font-size: 1.7rem;
+  background-color: #f0ffffa5;
+  color: darkblue;
+  border-radius: 10px;
   padding-left: 1rem;
-  font-size: 1.3rem;
-}
-#list {
-  padding: 0;
-  margin: 0;
-}
-#list ul {
-  padding: 0 !important;
-  margin: 0;
-}
-#list ul li {
-  height: 3rem;
-  list-style: none;
-  display: block;
-  font-size: 1.3rem;
-  padding-top: 0.5rem;
-  padding-left: 2em;
-  align-items: center;
   position: relative;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+span {
+  padding-left: 0.5rem;
 }
 .fa-trash {
   position: absolute;
-  right: 2rem;
-  top: 1rem;
+  right: 1rem;
+  top: 0.5rem;
 }
-
-#list ul li:nth-child(odd) {
-  background-color: #f2f2f2;
+.fa-circle,
+.fa-trash {
+  cursor: pointer;
 }
-#list ul li:nth-child(even) {
-  background-color: #d4d4d4;
+.delete {
+  transform: translateX(5rem);
+  opacity: 0;
+}
+.complete span {
+  text-decoration: line-through;
+  opacity: 0.3;
 }
