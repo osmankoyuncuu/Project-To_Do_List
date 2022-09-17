@@ -96,9 +96,7 @@ filterDom.addEventListener("click", (e) => {
 });
 
 //? clock and date
-const day = document.querySelector("#day");
-const month = document.querySelector("#month");
-const year = document.querySelector("#year");
+const date = document.querySelector("#date");
 const dayWord = document.querySelector("#dayWord");
 
 const days = [
@@ -114,7 +112,5 @@ const d = new Date().getDay();
 const m = new Date().getMonth();
 const y = new Date().getFullYear();
 
-day.innerText = d;
-month.innerText = m;
-year.innerText = y;
-dayWord.innerText = days[d];
+date.innerHTML = `${d}/${m}/${y}`;
+dayWord.innerHTML = days[d];
