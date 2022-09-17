@@ -61,14 +61,10 @@ listDom.addEventListener("click", (event) => {
     item.classList.remove("fa-circle");
     item.classList.add("fa-circle-check");
     item.parentElement.classList.add("complete");
-    console.log("check on");
-    console.log(item.classList);
   } else if (item.classList == "fa-regular fa-circle-check") {
     item.classList.remove("fa-circle-check");
     item.classList.add("fa-circle");
     item.parentElement.classList.remove("complete");
-    console.log("check out");
-    console.log(item.classList);
   }
 });
 
