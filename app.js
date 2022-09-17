@@ -72,31 +72,6 @@ listDom.addEventListener("click", (event) => {
   }
 });
 
-//? clock and date
-const day = document.querySelector("#day");
-const month = document.querySelector("#month");
-const year = document.querySelector("#year");
-const dayWord = document.querySelector("#dayWord");
-
-const days = [
-  "Pazar",
-  "Pazartesi",
-  "Salı",
-  "Çarşamba",
-  "Perşembe",
-  "Cuma",
-  "Cumartesi",
-];
-
-const d = new Date().getDay();
-const m = new Date().getMonth();
-const y = new Date().getFullYear();
-
-day.innerText = d;
-month.innerText = m;
-year.innerText = y;
-dayWord.innerText = days[d];
-
 //? Fİlter
 
 filterDom.addEventListener("click", (e) => {
@@ -123,3 +98,27 @@ filterDom.addEventListener("click", (e) => {
     }
   });
 });
+
+//? clock and date
+const day = document.querySelector("#day");
+const month = document.querySelector("#month");
+const year = document.querySelector("#year");
+const dayWord = document.querySelector("#dayWord");
+
+const days = [
+  "Pazar",
+  "Pazartesi",
+  "Salı",
+  "Çarşamba",
+  "Perşembe",
+  "Cuma",
+  "Cumartesi",
+];
+const d = new Date().getDay();
+const m = new Date().getMonth();
+const y = new Date().getFullYear();
+
+day.innerText = d;
+month.innerText = m;
+year.innerText = y;
+dayWord.innerText = days[d];

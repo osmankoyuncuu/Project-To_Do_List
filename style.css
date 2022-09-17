@@ -3,10 +3,9 @@ body {
   /* background-repeat: no-repeat; */
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   font-family: "Dancing Script", cursive;
-  margin: auto 6rem;
-  min-width: 440px;
+  min-width: 360px;
 }
 .header {
   height: 250px;
