@@ -1,10 +1,12 @@
 body {
   background-image: url(./img/photo-1.jfif);
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-position: center;
   background-size: cover;
   height: 100vh;
   font-family: "Dancing Script", cursive;
+  margin: auto 6rem;
+  min-width: 440px;
 }
 .header {
   height: 250px;
@@ -41,19 +43,22 @@ p {
   transition: all 0.5s;
 }
 span {
-  padding-left: 0.5rem;
+  margin-left: 1.5rem;
 }
 .fa-trash {
   position: absolute;
   right: 1rem;
   top: 0.5rem;
+  cursor: pointer;
 }
-.fa-circle,
-.fa-trash {
+.fa-regular {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
   cursor: pointer;
 }
 .delete {
-  transform: translateX(5rem);
+  transform: translateX(2rem);
   opacity: 0;
 }
 .complete span {

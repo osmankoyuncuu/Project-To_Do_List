@@ -33,9 +33,22 @@
           <h1 class="text-white display-3">To do list..</h1>
         </div>
         <div class="col-md-6">
-          <h2 class="text-dark display-3 d-flex justify-content-end">
-            Tarih-Saat
-          </h2>
+          <div
+            class="row text-white display-3 d-flex flex-column align-content-end"
+            id="date-clock"
+          >
+            <div class="col d-flex justify-content-end me-3">
+              <h2 class="mb-3">
+                <span id="day"></span> / <span id="month"></span> /
+                <span id="year"></span>
+              </h2>
+            </div>
+            <div class="col d-flex justify-content-end me-3">
+              <h2>
+                <span id="dayWord"></span>
+              </h2>
+            </div>
+          </div>
         </div>
       </div>
       <!-- Add -->
